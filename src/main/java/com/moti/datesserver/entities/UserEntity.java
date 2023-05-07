@@ -20,6 +20,15 @@ public class UserEntity {
     @Column(name = "password", nullable = false)
     private String password;
 
+    @Column(name = "phone_number", nullable = false)
+    private String poneNumber;
+
+    @Column(name = "gender", nullable = false)
+    private String gender;
+
+    @Column(name="name",nullable = false)
+    private String name;
+
     public UserEntity(long id, String userName, UserType userType, String password) {
         this.id = id;
         this.userName = userName;
