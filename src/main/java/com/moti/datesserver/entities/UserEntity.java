@@ -38,8 +38,7 @@ public class UserEntity {
     private WhatToSee whatToSee;
     @Column(name="introduction_purpose",nullable = false)
     private String introductionPurpose;
-
-
+//vdvd
     public UserEntity(long id, String userName, UserType userType, String password, String poneNumber,
                       Gender gender, String name, int dateOfBirth,
                       String describeYou, WhatToSee whatToSee, String introductionPurpose) {
