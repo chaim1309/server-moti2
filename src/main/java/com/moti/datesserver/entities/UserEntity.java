@@ -31,6 +31,7 @@ public class UserEntity {
     private  Date dateOfBirth;
     @Column(name="information_About_Myself" ,nullable = false)
     private String informationAboutMyself;
+    //Hello
     @Column(name="i_am_looking_for" ,nullable = false)
     private Gender  lookingFor;
     @Column(name="introduction_purpose",nullable = false)
