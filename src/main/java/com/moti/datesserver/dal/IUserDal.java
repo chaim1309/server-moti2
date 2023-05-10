@@ -21,16 +21,16 @@ public interface IUserDal extends CrudRepository<UserEntity, Long> {
 
 
 
-    @Query("SELECT new com.moti.datesserver.dto.UserDto(u.id,u.userName ,u.userType,u.name,u.poneNumber,u.gender" +
+    @Query("SELECT new com.moti.datesserver.dto.UserDto(u.id,u.userName ,u.userType,u.name,u.poneNumber,u.gender," +
             "u.dateOfBirth,u.describeYou,u.whatToSee,u.introductionPurpose)  from UserEntity u " +
             " where u.id = :id")
     UserDto findUserById(@Param("id")long id);
 
-    @Query("SELECT new com.moti.datesserver.dto.UserDto(u.id,u.userName ,u.userType,u.name,u.poneNumber,u.gender" +
+    @Query("SELECT new com.moti.datesserver.dto.UserDto(u.id,u.userName ,u.userType,u.name,u.poneNumber,u.gender," +
             "u.dateOfBirth,u.describeYou,u.whatToSee,u.introductionPurpose)  from UserEntity u " +
             " ")
     List<UserDto> findAll(Pageable pageable);
-    
+
 
 }
 
